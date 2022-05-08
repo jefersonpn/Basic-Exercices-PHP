@@ -38,6 +38,10 @@
     </form>
     </div>
     <br/>
-    <p class="d-flex justify-content-center"><?php echo verticalName($_POST['name']); ?></p>  
+    <p class="d-flex justify-content-center"><?php 
+     if (isset($_POST['name'])){
+        echo verticalName($_POST['name']);
+    }
+     ?></p>  
     </body>
 </html>

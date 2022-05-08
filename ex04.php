@@ -12,11 +12,14 @@
         <input type="text" name="name">
         <input type="submit" value="Submit Name">
     </form>
+    <h3> Hello
     <?php
-
-    $name = $_POST['name'];
+    if (isset($_POST['name'])){
+        $name = $_POST['name'];
+        echo "$name </h3>";
+    }
+         
     
-    echo "<h3> Hello $name </h3>";
    
     
     ?>
